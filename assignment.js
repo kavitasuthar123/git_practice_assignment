@@ -1,19 +1,33 @@
+
+//prime number or not 
 let num=15;
-let count="";
-for (let i=1;i<=num;i++){
-     if(num%i=0)
-   {count++;}}
-if(count=2){
-console.log("Yes")}
+let count=0;
+for(let i=2;i<num;i++){
+    if(num%i==0){
+        count++;
+        break;
+    }
+    
+}
+if(count==0){
+    console.log("Yes");
+}
 else{
-console.log("No")}
+    console.log("No");
+}
 
 
 
-//check whether a string is palindrome or not//
-let name="nitin";
-let bag="";
-for (let i=name;i>=0;--i){
-      if(name==bag){
-console.log("yes")}
-else{console.log("No")}}
+
+
+//check number is palindrome or not
+let num1=1234;
+let conv_num=num.toString();
+ let rev_num=conv_num.split("").reverse().join("");
+ if(conv_num==rev_num){
+     console.log("Yes");
+ }
+ else{
+     console.log("No");
+ }
+ 
